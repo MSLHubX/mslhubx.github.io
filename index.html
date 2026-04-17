@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MSL Hub</title>
+
+  <style>
+    :root{
+      --blue:#2e86ab;
+      --white:#ffffff;
+      --green:#849324;
+      --dark:#2b303a;
+      --black:#020202;
+    }
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background: var(--white);
+      color: var(--black);
+      line-height: 1.6;
+    }
+
+    /* NAV */
+    header{
+      position: fixed;
+      top:0;
+      width:100%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:18px 40px;
+      background: rgba(2,2,2,0.9);
+      color:white;
+      backdrop-filter: blur(10px);
+      z-index:1000;
+    }
+
+    nav a{
+      color:white;
+      margin-left:20px;
+      text-decoration:none;
+      font-size:14px;
+      opacity:0.8;
+    }
+
+    nav a:hover{
+      opacity:1;
+    }
+
+    /* HERO */
+    .hero{
+      height:100vh;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:0 20px;
+      background: var(--black);
+      color:white;
+    }
+
+    .hero h1{
+      font-size:3.5rem;
+      letter-spacing:-1px;
+    }
+
+    .hero p{
+      margin-top:15px;
+      font-size:1.2rem;
+      opacity:0.7;
+    }
+
+    .btn{
+      margin-top:25px;
+      padding:12px 24px;
+      background: var(--blue);
+      border:none;
+      color:white;
+      border-radius:30px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background: var(--green);
+    }
+
+    /* SECTIONS */
+    section{
+      padding:120px 10%;
+    }
+
+    .section-title{
+      font-size:2rem;
+      margin-bottom:10px;
+    }
+
+    .section-sub{
+      color:gray;
+      margin-bottom:40px;
+    }
+
+    /* GRID */
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap:20px;
+    }
+
+    .card{
+      padding:25px;
+      border:1px solid #eee;
+      border-radius:12px;
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+      border-color: var(--blue);
+    }
+
+    /* FOOTER */
+    footer{
+      background: var(--dark);
+      color:white;
+      text-align:center;
+      padding:40px;
+    }
+
+    /* ANIMATION */
+    .fade{
+      opacity:0;
+      transform: translateY(20px);
+      transition:0.6s ease;
+    }
+
+    .fade.show{
+      opacity:1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div><strong>MSL Hub</strong></div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#vision">Vision</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Connecting Services to People</h1>
+  <p>Simple. Reliable. Built for everyday life.</p>
+  <button class="btn">Get Started</button>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="fade">
+  <h2 class="section-title">About MSL Hub</h2>
+  <p class="section-sub">
+    MSL Hub is a platform designed to connect people with services in a simple and efficient way.
+  </p>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="fade">
+  <h2 class="section-title">What We Do</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Find Services</h3>
+      <p>Discover nearby service providers instantly.</p>
+    </div>
+    <div class="card">
+      <h3>Book Easily</h3>
+      <p>Schedule services at your preferred time.</p>
+    </div>
+    <div class="card">
+      <h3>On-Demand</h3>
+      <p>Get services delivered to your location.</p>
+    </div>
+  </div>
+</section>
+
+<!-- VISION -->
+<section id="vision" class="fade">
+  <h2 class="section-title">Our Vision</h2>
+  <p class="section-sub">
+    To simplify access to everyday services through one unified platform.
+  </p>
+</section>
+
+<footer>
+  <p>© 2026 MSL Hub. All rights reserved.</p>
+</footer>
+
+<script>
+  // scroll animation
+  const elements = document.querySelectorAll('.fade');
+
+  function showOnScroll(){
+    const trigger = window.innerHeight * 0.85;
+
+    elements.forEach(el=>{
+      const top = el.getBoundingClientRect().top;
+      if(top < trigger){
+        el.classList.add('show');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', showOnScroll);
+  showOnScroll();
+</script>
+
+</body>
+</html>
