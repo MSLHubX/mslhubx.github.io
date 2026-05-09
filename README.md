@@ -7,7 +7,7 @@ https://mslhubx.github.io
 
 ---
 
-## 📖 About The Project
+## About The Project
 
 MSL Hub was created to simplify access to services through one unified platform. The website focuses on a clean user experience, modern design, and easy navigation.
 
@@ -58,6 +58,11 @@ The platform aims to help users:
 ## Vision
 
 To simplify access to everyday services through one unified platform.
+
+---
+
+## Services
+- E-Wash: https://ewash-msl.netlify.app/
 
 ---
 
