@@ -5,7 +5,7 @@ MSL Hub is a modern platform designed to connect people with everyday services i
 ## Live Website
 https://mslhubx.github.io
 
-# _____________________________________________________________________________________________________________________________________________________
+---
 
 ## 📖 About The Project
 
