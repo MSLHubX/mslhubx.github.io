@@ -3,18 +3,118 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ── Primary SEO ─────────────────────────────────────────── -->
+  <title>MSL Hub | On-Demand Car Wash Booking & Local Services — E-Wash</title>
+  <meta name="description" content="MSL Hub connects you to local services instantly. Book a professional car wash on-site or mobile with E-Wash — real-time availability, verified providers, and secure Yoco payments." />
+  <meta name="keywords" content="car wash booking, mobile car wash, on-demand car wash, E-Wash, MSL Hub, local services, car wash near me, Yoco payment, book car wash online, South Africa car wash" />
+  <meta name="author" content="MSL Hub" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mslhubx.github.io/" />
+
+  <!-- ── PWA / Mobile ───────────────────────────────────────── -->
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="apple-mobile-web-app-title" content="MSL Hub" />
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="theme-color" content="#2E86AB" />
-  <meta name="description" content="MSL Hub — Connecting services to people. Simple. Reliable. Built for everyday life. Now featuring E-Wash, on-demand car wash booking." />
-  <title>MSL Hub · E-Wash</title>
 
-  <!-- Font Awesome -->
+  <!-- ── Open Graph (Facebook, WhatsApp, LinkedIn) ─────────── -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mslhubx.github.io/" />
+  <meta property="og:title" content="MSL Hub | On-Demand Car Wash & Local Services" />
+  <meta property="og:description" content="Book a professional car wash on-site or mobile with E-Wash. Real-time availability, verified providers, and secure Yoco payments — all in one platform." />
+  <meta property="og:image" content="https://mslhubx.github.io/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="MSL Hub — E-Wash on-demand car wash booking platform" />
+  <meta property="og:site_name" content="MSL Hub" />
+  <meta property="og:locale" content="en_ZA" />
+
+  <!-- ── Twitter / X Card ──────────────────────────────────── -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://mslhubx.github.io/" />
+  <meta name="twitter:title" content="MSL Hub | On-Demand Car Wash & Local Services" />
+  <meta name="twitter:description" content="Book a professional car wash on-site or mobile with E-Wash. Real-time availability, verified providers, and secure Yoco payments." />
+  <meta name="twitter:image" content="https://mslhubx.github.io/og-image.png" />
+  <meta name="twitter:image:alt" content="MSL Hub — E-Wash on-demand car wash booking platform" />
+
+  <!-- ── JSON-LD Structured Data ───────────────────────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://mslhubx.github.io/#website",
+        "url": "https://mslhubx.github.io/",
+        "name": "MSL Hub",
+        "description": "Connecting services to people. Simple. Reliable. Built for everyday life.",
+        "publisher": { "@id": "https://mslhubx.github.io/#organization" },
+        "inLanguage": "en-ZA"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://mslhubx.github.io/#organization",
+        "name": "MSL Hub",
+        "url": "https://mslhubx.github.io/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://mslhubx.github.io/og-image.png"
+        },
+        "sameAs": ["https://ewash-msl.netlify.app/"]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "E-Wash",
+        "url": "https://ewash-msl.netlify.app/",
+        "applicationCategory": "LifestyleApplication",
+        "operatingSystem": "Web",
+        "description": "E-Wash is an on-demand car wash booking platform. Find nearby car wash providers, check real-time availability, and book on-site or mobile services with secure Yoco payments.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "ZAR"
+        },
+        "publisher": { "@id": "https://mslhubx.github.io/#organization" }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is E-Wash?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "E-Wash is an on-demand car wash booking service by MSL Hub. You can find nearby car wash providers, view real-time availability, and choose between visiting a facility or requesting a mobile car wash to your location."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I book a car wash with E-Wash?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Visit E-Wash at ewash-msl.netlify.app, find a nearby provider using your location, choose on-site or mobile service, and pay securely via Yoco."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What payment methods does E-Wash accept?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "E-Wash uses Yoco for secure, frictionless payments. No card details are stored on the platform."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- ── Font Awesome ───────────────────────────────────────── -->
   <script src="https://kit.fontawesome.com/c1d74e9324.js" crossorigin="anonymous"></script>
 
-  <!-- Google Fonts -->
+  <!-- ── Google Fonts ───────────────────────────────────────── -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
@@ -106,7 +206,25 @@
     }
     .nav-links a:hover { opacity: 1; color: var(--primary); }
 
-    .nav-cta {
+    .nav-ewash-btn {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      background: var(--sec-lt);
+      color: var(--secondary);
+      border: 1px solid rgba(132,147,36,0.25);
+      border-radius: 24px;
+      padding: 9px 18px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .nav-ewash-btn:hover { background: #e0eba0; transform: translateY(-1px); }
+
+
       display: flex;
       align-items: center;
       gap: 7px;
@@ -177,7 +295,11 @@
       letter-spacing: 0.3px;
       margin-bottom: 2rem;
       animation: fadeDown 0.6s ease both;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.2s;
     }
+    .hero-badge:hover { background: rgba(255,255,255,0.22); }
     .hero-badge .dot {
       width: 6px; height: 6px;
       background: #7effa0;
@@ -573,6 +695,7 @@
       align-items: center;
       justify-content: center;
       gap: 8px;
+      text-decoration: none;
       transition: background 0.2s, transform 0.15s;
     }
     .book-now-btn:hover { background: #6e7c1c; transform: translateY(-1px); }
@@ -627,6 +750,41 @@
       margin-bottom: 5px;
     }
     .step-card p { font-size: 12px; color: #999; line-height: 1.55; margin: 0; }
+
+    /* ─── E-WASH CTA BANNER ──────────────────────────────── */
+    .ewash-cta-banner { margin: 0 1.5rem 2.5rem; }
+    .ewash-cta-inner {
+      background: linear-gradient(120deg, var(--primary-dk) 0%, var(--primary) 100%);
+      border-radius: 20px;
+      padding: 2rem 2.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .ewash-cta-icon {
+      width: 52px; height: 52px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px; color: white; flex-shrink: 0;
+    }
+    .ewash-cta-text { flex: 1; min-width: 200px; }
+    .ewash-cta-text h3 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 18px; font-weight: 800; color: white; margin-bottom: 4px;
+    }
+    .ewash-cta-text p { font-size: 14px; color: rgba(255,255,255,0.72); margin: 0; line-height: 1.5; }
+    .ewash-cta-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: white; color: var(--primary);
+      border-radius: 24px; padding: 12px 24px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 14px; font-weight: 700;
+      text-decoration: none; white-space: nowrap; flex-shrink: 0;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .ewash-cta-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.15); }
 
     /* ─── VISION ──────────────────────────────────────────── */
     .vision-section {
@@ -711,7 +869,7 @@
 
     /* ─── RESPONSIVE ──────────────────────────────────────── */
     @media (max-width: 720px) {
-      .nav-links, .nav-cta { display: none; }
+      .nav-links, .nav-cta, .nav-ewash-btn { display: none; }
       .nav-mobile-toggle { display: block; }
 
       .ewash-section {
@@ -755,6 +913,10 @@
       <li><a href="#vision">Vision</a></li>
     </ul>
 
+    <a href="https://ewash-msl.netlify.app/" target="_blank" rel="noopener" class="nav-ewash-btn">
+      <i class="fa-solid fa-car-wash" aria-hidden="true"></i>
+      Launch E-Wash
+    </a>
     <button class="nav-cta">
       <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
       Get Started
@@ -771,11 +933,11 @@
     <div class="hero-orb-2"></div>
     <div class="hero-orb-3"></div>
 
-    <div class="hero-badge">
+    <a href="https://ewash-msl.netlify.app/" target="_blank" rel="noopener" class="hero-badge" aria-label="Launch E-Wash app">
       <span class="dot"></span>
       <i class="fa-solid fa-car-side" aria-hidden="true"></i>
       Now featuring E-Wash — on-demand car wash booking
-    </div>
+    </a>
 
     <h1>Connecting Services<br>to <em>People</em></h1>
 
@@ -785,9 +947,9 @@
     </p>
 
     <div class="hero-btns">
-      <a href="#ewash" class="btn-primary">
+      <a href="https://ewash-msl.netlify.app/" target="_blank" rel="noopener" class="btn-primary">
         <i class="fa-solid fa-bolt" aria-hidden="true"></i>
-        Get Started
+        Try E-Wash Now
       </a>
       <a href="#services" class="btn-ghost">
         <i class="fa-solid fa-compass" aria-hidden="true"></i>
@@ -934,10 +1096,10 @@
         </button>
       </div>
 
-      <button class="book-now-btn">
+      <a href="https://ewash-msl.netlify.app/" target="_blank" rel="noopener" class="book-now-btn">
         <i class="fa-solid fa-calendar-plus" aria-hidden="true"></i>
-        Book Now
-      </button>
+        Book Now on E-Wash
+      </a>
     </div>
   </div>
 
@@ -979,6 +1141,23 @@
     </div>
   </section>
 
+  <!-- ── E-WASH CTA BANNER ─────────────────────────────────── -->
+  <div class="ewash-cta-banner reveal">
+    <div class="ewash-cta-inner">
+      <div class="ewash-cta-icon" aria-hidden="true">
+        <i class="fa-solid fa-car-wash"></i>
+      </div>
+      <div class="ewash-cta-text">
+        <h3>Ready for a cleaner car?</h3>
+        <p>E-Wash is live. Find providers near you and book in under 60 seconds.</p>
+      </div>
+      <a href="https://ewash-msl.netlify.app/" target="_blank" rel="noopener" class="ewash-cta-btn">
+        <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+        Open E-Wash
+      </a>
+    </div>
+  </div>
+
   <!-- ── VISION ────────────────────────────────────────────── -->
   <div class="vision-section" id="vision">
     <div class="section-tag">
@@ -1003,6 +1182,7 @@
       <li><a href="#services">Services</a></li>
       <li><a href="#ewash">E-Wash</a></li>
       <li><a href="#vision">Vision</a></li>
+      <li><a href="https://ewash-msl.netlify.app/" target="_blank" rel="noopener" style="color:rgba(132,147,36,0.8)"><i class="fa-solid fa-arrow-up-right-from-square" style="font-size:10px;margin-right:4px" aria-hidden="true"></i>Launch App</a></li>
     </ul>
 
     <p class="footer-copy">© 2026 MSL Hub. All rights reserved.</p>
